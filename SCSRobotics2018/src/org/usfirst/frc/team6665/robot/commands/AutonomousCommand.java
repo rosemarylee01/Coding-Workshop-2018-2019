@@ -55,29 +55,14 @@ public class AutonomousCommand extends Command {
     @Override
     protected void execute() {
     	
-    	if(timer.get()<=4) {
+    	if(timer.get()<= 5) {
     	   System.err.println("autoEx ran");
         	Robot.driveTrain.differentialDrive1.arcadeDrive(-0.7,0);//drive "forward"
         	// (speed/output from motor,rotation angle)
         	} else {
-		Robot.driveTrain.differentialDrive1.arcadeDrive(0,0);//stop movement
-	}
-    
-		//if(timer.get()==6&&gameData.charAt(0)=='L'&&side==1){
-    		//Robot.claw.clawOpen();
-    	//}
-		//else if(timer.get()==6&&gameData.charAt(0)=='R'&&side==2) {
-			//Robot.claw.clawOpen();
-		//}
-        }
-       // while(timer.get() <= (time + 2)) {
-        	//Robot.driveTrain.differentialDrive1.arcadeDrive(0, 0.5); //rotate
-        	//time = timer.get();
-        //}
-       // while(timer.get() <= (time + 10)) {
-        	//Robot.driveTrain.differentialDrive1.arcadeDrive(0, 0); //don't move
-       // }
-    //}
+		Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//stop movement
+		}
+    } //end v.execute
 
     // Make this return true when this Command no longer needs to run execute()
     @Override
