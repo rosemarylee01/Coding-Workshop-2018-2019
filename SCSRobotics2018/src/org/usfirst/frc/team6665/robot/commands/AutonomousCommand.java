@@ -62,19 +62,19 @@ public class AutonomousCommand extends Command {
         	} else if(timer.get()<=8){
 		Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//stop movement
 		}
-	    if(timer.get()<=10)
+	    else if(timer.get()<=10)
 	    Robot.driveTrain.differentialDrive1.arcadeDrive(-0.5,0);//drive "forward"
         	// (speed/output from motor,rotation angle)
 	    else if(timer.get()<=10){
 		Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//stop movement
 		}
-	    if(timer.get()<=13)
+	    else if(timer.get()<=13)
 		    Robot.driveTrain.differentialDrive1.arcadeDrive(-0.5,0);//drive "forward"
         	// (speed/output from motor,rotation angle)
 	    else if(timer.get()<=13){
 		Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//stop movement
 		}
-	    if(timer.get()<=15)
+	    else if(timer.get()<=15)
 	    else if(timer.get()<=15{
 		Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5);//stop movement
 		}
