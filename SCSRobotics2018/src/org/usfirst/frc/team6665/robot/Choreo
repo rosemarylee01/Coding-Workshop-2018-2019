@@ -1,0 +1,30 @@
+package org.usfirst.frc.team6665.robot.commands;
+import edu.wpi.first.wpilibj.DriverStation;
+import edu.wpi.first.wpilibj.Timer;
+import edu.wpi.first.wpilibj.command.Command;
+import org.usfirst.frc.team6665.robot.Robot;
+
+/**
+ *
+ */
+public class AutonomousCommand extends Command {
+	
+private Timer timer
+for(int counter =0; counter<3;counter++){
+int timeStart=timer.get()
+if(timer.get()<timeStart+2){
+Robot.driveTrain.differentialDrive1.arcadeDrive(-0.5,0);
+
+}elseif(timer.get()<timeStart+3.5){
+Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5)
+if(timer.get()<timeStart+5.0){
+Robot.driveTrain.differentialDrive1.arcadeDrive(-0.5,0)
+}elseif(timer.get()<timeStart+6.5{
+Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5)
+if(timer.get()<timestart+8.0){
+Robot.driveTrain.differentialDrive1.arcadeDrive(-0.5,0)
+}elseif(timer.get()<timeStart+9.5){
+Robot.driveTrain.differentialDrive1.arcadeDrive(0,0.5)
+if(timer.get()<timeStart+11.0){
+Robot.driveTrain.differentialDrive1.arcadeDrive(-0.5,0)
+}
